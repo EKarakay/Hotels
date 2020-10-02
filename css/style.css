@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-family: sans-serif;
+}
+.container-margin {
+  margin-bottom: 70px;
+}
+body {
+  z-index: -1;
+  background-color: #f1f1f1;
+}
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Шапка страницы */
+
+.header__container {
+  width: 100%;
+  height: 54px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+.header__left {
+  margin-right: 30px;
+}
+.header__phone {
+  display: flex;
+  font-size: 22px;
+  line-height: 1.455;
+  font-family: "MullerBold";
+}
+.logo__phone {
+  color: rgb(102, 102, 102);
+}
+.header__right {
+  margin: auto 10px auto auto;
+}
+.login {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerMedium";
+  text-align: left;
+  color: rgb(204, 153, 51);
+}
+.login__img {
+  transform: translateY(2px);
+}
+
+/* Меню навигации */
+
+.nav {
+  height: 70px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.nav__list {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+}
+.nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+.nav__item:nth-child(7) {
+  margin-left: 125px;
+}
+.nav__find {
+  width: 350px;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: "MullerRegular";
+  color: #c5c5c5;
+  background-color: rgb(241, 241, 241);
+  border: none;
+  border-radius: 15px;
+}
+.img__find {
+  max-width: 22px;
+  max-height: 22px;
+  position: relative;
+  right: 40px;
+}
+
+/*  Стиль заголовков*/
+
+.header-h2 {
+  margin: 0 auto 25px 45px;
+  font-size: 40px;
+  line-height: 0.8;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+}
+
+/* Быстрая бронь */
+
+.container__quick-booking {
+  max-height: 605px;
+}
+.quick-booking {
+  display: flex;
+  justify-content: space-between;
+}
+.fieldset {
+  min-height: 450px;
+  padding: 0;
+  display: flex;
+  border: none;
+}
+.fildset__item__field {
+  min-width: 518px;
+  min-height: 70px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerRegular";
+  color: #a7a7a7;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.btn {
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerBold";
+  text-align: center;
+}
+.btn__search-number {
+  width: 160px;
+  height: 70px;
+  color: white;
+  background-color: rgb(204, 153, 51);
+  border: none;
+  border-radius: 12px;
+}
+.free-numbers {
+  font-size: 16px;
+  font-family: "MullerRegular";
+}
+.number-free {
+  padding-left: 30px;
+  color: rgb(204, 153, 51);
+}
+
+/* Спецпредложение */
+
+.special-offer__img {
+  border-radius: 10px;
+}
+.special-offer__box {
+  width: 320px;
+  height: 170px;
+  position: relative;
+  bottom: 275px;
+  left: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.special-offer__text {
+  bottom: 40px;
+  left: 40px;
+  font-size: 66px;
+  line-height: 0.879;
+  font-family: "MullerBold";
+  text-align: left;
+  color: white;
+}
+.special-offer__price {
+  display: inline-flex;
+  font-size: 36px;
+  line-height: 0.914;
+  font-family: "MullerRegular";
+  text-align: left;
+  color: rgba(255, 255, 255, 0.49);
+}
+.special-offer__next {
+  margin-left: 40px;
+  display: inline;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  color: rgb(255, 204, 102);
+}
+.stroke {
+  vertical-align: middle;
+}
+
+/* О Нас */
+
+.container__about-us {
+  margin: 0 240px 0 0;
+  line-height: 2;
+  color: rgb(102, 102, 102);
+}
+.about-us {
+  text-align: left;
+}
+.normal-font {
+  margin: 0;
+  padding-left: 45px;
+  font-size: 16px;
+  font-family: "MullerRegular";
+  text-align: left;
+}
+
+/* Услуги */
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service__list__item {
+  margin-bottom: 24px;
+  flex: 0 0 49%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px 12px 12px 12px;
+}
+.service__img {
+  width: 100%;
+  margin-bottom: 35px;
+  border-radius: 12px 12px 0 0;
+}
+.service__header-item {
+  margin: 0 auto 20px 45px;
+  font-size: 22px;
+  line-height: 1.455;
+  font-family: "MullerMedium";
+  text-align: left;
+  color: rgb(204, 153, 51);
+}
+.service__item__text {
+  margin: 0 110px 45px 45px;
+  padding: 0;
+  display: flex;
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerRegular";
+  text-align: left;
+  color: rgb(51, 51, 51);
+}
+.last-line {
+  margin-bottom: 0;
+}
+
+/* Преимущества */
+
+.edge__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.edge__list-item {
+  flex: 0 0 23%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.edge__list-item {
+  margin-bottom: 24px;
+}
+.edge__item {
+  padding: 45px;
+}
+.edge__img {
+  width: 70px;
+  height: 60px;
+}
+.edge__text {
+  width: 170px;
+  font-size: 16px;
+  line-height: 2;
+  font-family: "MullerRegular";
+  text-align: left;
+  color: rgb(51, 51, 51);
+}
+
+/* Размещение */
+
+.placing__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.placing__list-item {
+  height: 441px;
+  margin-bottom: 20px;
+  flex: 0 0 32%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.placing__item {
+  height: 100%;
+}
+.placing__price {
+  margin-right: 40px;
+  display: inline-flex;
+}
+.placing__box {
+  margin: auto 45px 20px 0;
+  display: block;
+  font-size: 18px;
+  line-height: 2;
+  font-family: "MullerRegular";
+  text-align: left;
+  color: rgb(150, 150, 150);
+}
+.placing__font {
+  margin: 0;
+  font-family: "MullerMedium";
+  color: black;
+}
+.placing__color {
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+}
+.img-placing {
+  margin-bottom: 35px;
+  border-radius: 12px 12px 0 0;
+}
+.img-placing-next {
+  border-radius: 12px;
+}
+.placing__box-next {
+  position: relative;
+  bottom: 80px;
+  left: 40px;
+  font-size: 22px;
+  line-height: 1.455;
+  font-family: "MullerMedium";
+  text-align: left;
+  color: white;
+}
+.font-placing__price {
+  font-size: 20px;
+  font-family: "MullerBold";
+  color: black;
+}
+.box-stars {
+  display: inline;
+}
+.btn__placing {
+  width: 100px;
+  height: 40px;
+  margin: auto auto 45px 45px;
+  display: block;
+  color: rgb(204, 153, 51);
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 153, 51);
+  border-radius: 12px;
+}
+.last-line {
+  margin-bottom: 0;
+}
+
+/* Шрифты */
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "MullerRegular";
+  src: url("..//fonts/MullerRegular.woff") format("woff2"),
+  url("..//fonts/MullerRegular.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "MullerLight";
+  src: url("..//fonts/MullerLight.woff2") format("woff2"),
+  url("..//fonts/MullerLight.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "MullerMedium";
+  src: url("..//fonts/MullerMedium.woff") format("woff2"),
+  url("..//fonts/MullerMedium.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "MullerBold";
+  src: url("..//fonts/MullerBold.woff2") format("woff2"),
+  url("..//fonts/MullerBold.woff") format("woff");
+}
