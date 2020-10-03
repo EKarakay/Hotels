@@ -120,7 +120,7 @@ body {
 /* Быстрая бронь */
 
 .container__quick-booking {
-  max-height: 605px;
+  max-height: 596px;
 }
 .quick-booking {
   display: flex;
@@ -169,21 +169,24 @@ body {
 
 /* Спецпредложение */
 
-.special-offer__img {
-  border-radius: 10px;
-}
-.special-offer__box {
-  width: 320px;
-  height: 170px;
-  position: relative;
-  bottom: 275px;
-  left: 45px;
+.special-offer__block {
+  width: 595px;
+  height: 540px;
   display: flex;
+  background-image: url(/img/special_offer.jpg);
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  align-items: flex-end;
+} 
+
+.special-offer__box {
+  display: flex;
+  width: 380px;
+  height: 275px;
   flex-direction: column;
 }
 .special-offer__text {
-  bottom: 40px;
-  left: 40px;
+  padding-left: 40px;
   font-size: 66px;
   line-height: 0.879;
   font-family: "MullerBold";
@@ -191,6 +194,7 @@ body {
   color: white;
 }
 .special-offer__price {
+  padding-left: 40px;
   display: inline-flex;
   font-size: 36px;
   line-height: 0.914;
@@ -200,8 +204,7 @@ body {
 }
 .special-offer__next {
   margin-left: 40px;
-  display: inline;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   text-align: center;
   color: rgb(255, 204, 102);
