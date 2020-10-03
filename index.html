@@ -85,28 +85,21 @@
           <div class="left-section">
             <h2 class="header-h2 quick-booking-heading">Быстрая бронь</h2>
             <div>
+              <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="quick__booking__form">
               <fieldset class="fieldset">
-                <ul class="fildset__list">
-                  <li class="fildset__item">
-                    <input type="text" class="city fildset__item__field" placeholder="Город" required>
-                  </li>
-                  <li class="fildset__item">
-                    <input type="text" class="fildset__item__field" placeholder="Категория номера" required>
-                  </li>
-                  <li class="fildset__item">
-                    <input type="text" class="fildset__item__field" placeholder="Дата заселения" required>
-                  </li>
-                  <li class="fildset__item">
-                    <input type="text" class="fildset__item__field" placeholder="Количество ночей" required>
-                  </li>
-                  <li class="fildset__item">
-                    <input type="text" class="fildset__item__field" placeholder="Количество гостей" required>
-                  </li>
-                </ul>
+                <input type="text" name="city" maxlength="10" class="city fildset__item" placeholder="Город" required>
+                <input type="text" name="category" maxlength="10" class="fildset__item" placeholder="Категория номера" required>
+                <input type="date" name="date" class="fildset__item" placeholder="Дата заселения" required>
+                <input type="number" name="day" maxlength="2" class="fildset__item" placeholder="Количество ночей" required>
+                <input type="number" maxlength="2" name="guests" class="fildset__item" placeholder="Количество гостей" required>
               </fieldset>
               <div class="search-number">
-                <input type="button" class=" btn btn__search-number" value="Найти номер">
-                <span class="free-numbers"> <span class="number-free">9756 </span> предложений доступно</span>
+                <button type="submit" class=" btn btn__search-number">
+                  Найти номер
+                  </button>
+                  <span class="free-numbers"> <span class="number-free">9756 </span> предложений доступно</span>
+                </form>
+              
               </div>
             </div>
           </div>

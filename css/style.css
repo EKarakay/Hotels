@@ -132,20 +132,19 @@ body {
   display: flex;
   border: none;
 }
-.fildset__item__field {
+.fildset__item {
   min-width: 518px;
   min-height: 70px;
   margin-bottom: 24px;
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   font-family: "MullerRegular";
-  color: #a7a7a7;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
 }
 .btn {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   font-family: "MullerBold";
   text-align: center;
