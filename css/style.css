@@ -502,19 +502,26 @@ body {
 
 .footer {
   display: flex;
+  position: relative;
   border-radius: 12px;
   background-color: rgb(51, 51, 51);
   height: 338px;
+  width: 1170px;
 }
 
 .footer__blocks__left {
-  width: 300px;
+  width: 345px;
   height: 240px;
-  margin: 50px 124px 50px 50px;
+  margin: 50px 70px 50px 50px;
   font-size: 16px;
   font-family: "MullerRegular";
   color: rgb(255, 255, 255);
   line-height: 2;
+}
+
+.offert_info {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .copyrihgt {
@@ -545,6 +552,13 @@ body {
   margin-bottom: 20px;
 }
 
+.footer__img {
+  width: 258px;
+  height: 228px;
+  position: absolute;
+  right: 175px;
+  bottom: 0;
+}
 
 /* Шрифты */
 
