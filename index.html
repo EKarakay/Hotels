@@ -25,7 +25,7 @@
       <div class="header__right">
         <a href="#" class="login">
           <svg class="login__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewbox="0 0 15 15"
             enable-background="new 0 0 15 15" xml:space="preserve">
             <path fill="#CC9933" d="M13.995,3.735c-0.671-1.149-1.581-2.059-2.729-2.729C10.116,0.335,8.861,0,7.5,0
         	C6.14,0,4.885,0.335,3.735,1.006c-1.149,0.67-2.059,1.581-2.729,2.729C0.335,4.884,0,6.139,0,7.5c0,1.361,0.335,2.615,1.006,3.765
@@ -66,7 +66,9 @@
             <a href="" class="nav__link">Контакты</a>
           </li>
           <li class="nav__item">
-            <input type="text" placeholder="Поиск" class="find nav__find">
+            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+              <input type="text" name="search" placeholder="Поиск" class="find nav__find">
+            </form>
           </li>
           <li>
             <img src="/img/search.png" alt="Поиск" class="img__find ">
@@ -85,21 +87,23 @@
           <div class="left-section">
             <h2 class="header-h2 quick-booking-heading">Быстрая бронь</h2>
             <div>
-              <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="quick__booking__form">
-              <fieldset class="fieldset">
-                <input type="text" name="city" maxlength="10" class="city fildset__item" placeholder="Город" required>
-                <input type="text" name="category" maxlength="10" class="fildset__item" placeholder="Категория номера" required>
-                <input type="date" name="date" class="fildset__item" placeholder="Дата заселения" required>
-                <input type="number" name="day" maxlength="2" class="fildset__item" placeholder="Количество ночей" required>
-                <input type="number" maxlength="2" name="guests" class="fildset__item" placeholder="Количество гостей" required>
-              </fieldset>
-              <div class="search-number">
+              <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
+                class="quick__booking__form">
+                <fieldset class="fieldset">
+                  <input type="text" name="city" maxlength="10" class="city fildset__item" placeholder="Город" required>
+                  <input type="text" name="category" maxlength="10" class="fildset__item" placeholder="Категория номера"
+                    required>
+                  <input type="date" name="date" class="fildset__item" required>
+                  <input type="number" name="day" class="fildset__item" placeholder="Количество ночей" required>
+                  <input type="number" name="guests" class="fildset__item" placeholder="Количество гостей" required>
+                </fieldset>
+                <div class="search-number">
                   <button type="submit" class=" btn btn__search-number">
-                  Найти номер
+                    Найти номер
                   </button>
                   <span class="free-numbers"> <span class="number-free">9756 </span> предложений доступно</span>
-              </div>
-             </form>
+                </div>
+              </form>
             </div>
           </div>
           <article class="right-section">
@@ -499,7 +503,182 @@
         </ul>
       </div>
     </section>
+
+
+    <section class="container contacts__write-us">
+
+      <!-- Контакты -->
+
+      <div class="contacts">
+        <h2 class="header-h2 contacts__heading">Контакты</h2>
+        <div class="contacts__block">
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              Адрес
+            </div>
+            <div class="contacts__info">
+              Москва, улица Юности, дом 5 строение 4, офис 2
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">Телефоны</div>
+            <div class="contacts__info contacts__info_color">
+              <a href="tel:+74995356434" class="contacts__info_color">+7 (499) 535-64-34</a><br>
+              <a href="tel:+74950050544" class="contacts__info_color">+7 (495) 005-05-44</a>
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              E-mail
+            </div>
+            <div class="contacts__info color_gray">
+              <a href="mailto:lg.oona@mail.ru" class="contacts__info_color">lg.oona@mail.ru</a> по вопросам бронирования
+              <p><a href="mailto:hotels.ln@mail.ru" class="contacts__info_color">hotels.ln@mail.ru</a> по вопросам
+                сотрудничества</p>
+            </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              График
+            </div>
+            <div class="contacts__info">
+              Понедельник-Пятница,
+              <p>с 10:00 до 19:00</p>
+            </div>
+          </div>
+          <div class="route">
+            <button type="submit" class=" btn btn__route">
+              Построить маршрут
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Напишите нам -->
+
+      <div class=" write-us">
+        <h2 class="header-h2 write-us__header">Напишите нам</h2>
+        <div>
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
+            class="write-us__form">
+            <fieldset class="fieldset">
+              <input class="city write-us__item" type="text" id="name" maxlength="16" placeholder="Имя" required>
+              <input class="write-us__item" type="tel" id="phone" minlength="11" maxlength="16" placeholder="+7"
+                pattern="[+]{1}[0-9]{11-16}" required>
+              <textarea class="write-us__item write-us__form__textarea" id="message"
+                placeholder="Сообщение..." required></textarea>
+              <button type="submit" class=" btn btn__send">
+                Отправить
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="footer__blocks__left">
+        <span class="copyrihgt">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс"</span>
+        <p class="offert_info">Представленная на сайте информация носит справочный характер<br>и не является публичной
+          офертой</p>
+        <a href="#" class="policy contacts__info_color">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__blocks__right ">
+        <span class="address">11710, улица Юности, дом 5 строение 4, офис 2</span>
+        <p>
+          <a href="tel:+74995356434" class="contacts__info_color">+7 (499) 535-64-34</a><br>
+          <a href="tel:+74950050544" class="contacts__info_color">+7 (495) 005-05-44</a>
+        </p>
+        <a href="mailto:lg.oona@mail.ru" class="contacts__info_color">lg.oona@mail.ru</a><br>
+        <a href="mailto:hotels.ln@mail.ru" class="contacts__info_color">hotels.ln@mail.ru</a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://www.tripadvisor.ru/" target="blank" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25"
+                viewbox="0 0 25 25">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image id="tripadvisor" class="cls-1" width="25" height="25"
+                  xlink:href="data:img/png;base64,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" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/" target="blank" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewbox="0 0 24 24">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image id="twitter" class="cls-1" width="24" height="24"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEnUlEQVRogd2az2tdVRDHP3Pz0qQ0aYpRENEqlaQWSxsLrRhFVGzdKC40ItJdXfZ/cePKRamiInQpCGoXRWqERiUUN0nbYNXaqqRiGpukpo7My9xwe9/9ce59L22fX3jw3rlzzvnOnXPmzMx5QgehqkPAsH/6gT5/tAIsA/P2EZG/OjVnWwqoagMYAXYCO4CtgV0XgDlgBjgnIqt1OdRSQFUHgXFgDNhcd3LHEjANTIrItaqdKymgqrYkngP2A42qk5XArDAFnBKRldBOwQqo6ijwCjBYm2IYzAqfishsiHCpAqoaAS/6krmdmAROisi/RUKFCqhqLzABjHacXhjMCidE5J88gVwFnPxh4OENoxeGi8CHeUpEWY2+bCbuAvI4hwnn1ILMRl/zd2rZZGHUObWgxRW6t9nIDfs7cB74E+gB7vGDcChH/qbLjavqj2nvdMsecD9/NMNV/g1saZP4VeAzETmffqCqxmMPcBAY8GY7rc/4KnnB28zFvps8J9IKvAQ8lRr/N+AD4Ii/rTr4BfhIRJaKhDyW2usWugz0+gtNhijfiMjn8Y8o0XnQT9g0zoqIWeB9D8aqYhH4pIy8wYI8EflKRH71ppd9NVxNiO13rrcq4Os+Kzz4OR4cOBb/rgALDRYr9sGDQ5vrHV9OMRrJPdpUwKPKsZyBbsRf3BLHgdPWLYCExTdna5C3uS6IiMVG+4BHUo/HnPO6BUYKosr+1MA3ReQk8B7wUwmPyyJyo0QmF6o67sFjGpud87oCOwvGeSirUUSM3DHf4LM5FqmzdJpwh3KoQKTJOV7zOwoE96rqaRHJXDIiYonJnKqam30M2A48CGxLZGR1MFLyvMm54a6rKJO6173TmaLRfH9855/Yt7eT7Gwqeb7VuEeevxbha+BJVS2yUgvMYiJyvUqfFEKUH24EKPC9iHypqgMlch2Dz9UbIDocpb1MBh5g7Y3W3pA1cF+gXH8UsNH2dIBQVWwPlOvLC6eTGFHV9EGy0Xg0VDDyolMZXlPVbe1xCoPHOZlnTwZWIq+YlcEGfVtVg99MG9hXoVqyHFWIMM1Sj6uqxSE9bRDMhcc3WRFxHuYbFRTo84SkdhkwAAcSCU0I5iMPkxcChAc2MtV03/9shS4Lxj32QnOBnZ5X1aLArx28GnAmJdHkHCswE9jJNtcbqvp0J/eBjRcQvKXR5BxHo+e8ShwSf/R48n1AVS1ZsUrBheq016Cqu/JKJgVYcs5rFvCNOV1xkCE/MSuXxGOoqoXfr9co80/HziSZA08Gls1XXfspzwVqwbOtgzXIrzrXJtbJ2uWCqk4lyirLHtv3+Blg8f4V4JKllW0QH/RqQ11nMJW8CEm/7VPAbj95+30Sy39n8jKyCsQ3uZ9/pqK3SeKac1xHi/m8tPhWqvkP4FvgB8+8qhC30PgJL1i1W937uLC0mJj0UM6hZVa45CXvK17fXPTSS6+f1ls8nr/f89ZOBYF2h/ZFujFPAfNOb95FFepZr+613NZk5gMueMLf9J3GRb+lybxq+v9eMcXo6ku+JLr2mjWJrr7oTqJr/2qQRtf+2SMPt/3vNsB/P6uOhOQ1SpoAAAAASUVORK5CYII=" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://facebook.com/" target="blank" class="social__link">
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewbox="0 0 24 24">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image id="facebook" class="cls-1" width="24" height="24"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADF0lEQVRogdWaQWvUQBTHf2+JtBXbgtWDCBYKbU9CDxZlTz302mNv3v0Kfh1BQehF6Emo0tNeVrDgqS0UKwgVbMFW2i1Wn8z6smSzyTY7iZvND5aFSWbm/08mkzfzIhSIqk4DM/YbB8bs0CXQAo7dT0R+FNVnLgOqGgDzwCIwB0xlrHoKHAC7wL6IXPlq8DKgqpNAHVgCJnw7Ny6AHaAhImeDVh7IgKq6IbECLAPBoJ1dg7sLTWBbRC6zVspsQFUXgDVg0ltiNtxd2BSRvSwnX2tAVWvAqg2ZYdIAtkTkT7+T+hpQ1RvAOrBQgKALu7ruXyPl7gI9SKnj7sKGiPxKazTVgIl/CszmEO3G9Qd7SL+JiMZPUFU33T7v08Yh8DLNROKDaMNmPaf4E+CViBznaAPTsK6qr5OGUy2l0mrOYXMOvChAfMiCaeqhx4DNNnkf2PdFvm2NumnrosuAzfNrOTtyV/9jzjbSWDONHeLPwEoB8/xnEfmddEBVbwEPgek+GvoxaRrf9lS28GDZV3WEo6RCu3LPCrhAy6raCTuiQ6heUHhwnlI+W9BbPIg+o20DFlUuFdA4NvcncbOg9h1LprlzB+YLiCqHyYRp7hhYLFePF23NoYG5crV40dYc2DIw60oqzjsgHqN8TTn3C/Amofwe8Nij7ymnPbD1qy9NEWllOVFETiw+6kJVW54GHDO1nAbKpm1gfASE+DJei2x9VJGxtHC6MgS26eTLqqrG37yfRKRnJlLV+xbIxbmdo//LwHbMfHmUUHaUMpXeBZ7k6CuJVs22+6rKcfUN2NLvdATEDMqp0x7OQgcli/GhrTk0sFuuFi/amkMD+7ZjVhUuTPM/A7Y/v1O6rOzshDmF6Ju40Wc5OEpcmdY2HQO2ym+WJis7zWgiJB4LbdsO8qhyZho7dBmwzMjm0GVlZzOevemJRi0z0oiXjwCNpKxNWji9ZcmFUWHPNPWQaMD24TcsuVA2h5alSUw1/Y8U03fgZ0K529i9M0A75EoxhVQ6yRelsmnWKJVOdEep7KcGcSr7sUcaQ//cBvgL5iH+jtnxfmsAAAAASUVORK5CYII=" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vk.com/" target="blank" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewbox="0 0 24 24">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image id="social" class="cls-1" width="24" height="24"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEW0lEQVRogd2a22tcVRSHv3VsTVpJWwlKEbUl0BQvD/ESpEG0aDX6EFRKfBJ8FvwD+r/0xbtgHwRTH4SKFWG0RFEEkbTSWqxSLxFM0Tbadska1pmcnNn7zD6TcTLjB8Mw+3L2b529zzpr7T1CD1HVncC4f0aBEa9aBa4Ay/YRkT96NeaGDFDVLcA+YD8wAexI7LoCnAWWgDMicrVbDV0ZoKpjwAwwBWzrdnDnMvAV0BCRS3U71zJAVW1JHASmgS11B+uAzcIicFJEVlM7JRugqpPAHDDWtcQ0bBYWROR0SuOOBqhqBhzyJdNPGsAJEble1ajSAFXdCswDkz2Xl4bNwjER+SfWIGqAi38B2POfyUvjPPBGzIgsVOjLZn4AxOMa5l1TG8FCX/ObtWxCTLqmNtoMcG/T7wc2hRnXto51Brifn+urrHrMucYW5Rk42Ac/vxHGXGOLlgEeHkxviqx6TLvWJsVwYKYH4cFPwK92P0rlox703bDB6+MaTesH+Y88qpwKNDYxnwHXSuXbgUcL4bLxPfBa7M2pqo8AjwWqLO55D/gzULfVx7m9VD6lqh9aFJvf8X2RqPKiiHwREWRCnyoU7QVeUtWjIvJ3oMsvoesAp0Tkm0idjbM3YMA21/xt/gzsj/S/u7jeSphhf5XKbqn5/rjmEWgQVbUld2+kuqk5N2Ai0sgucCBU4a/2U4GqnZ1UF/i6Qw4wXXG9pubM08CqTOpBVd0eqVv0VLHITdWaW9gN+ChWqaqWlj5e0X+Hac88f63ixtibWURsCX1cHrvD9XIsA1sJVfjSOewPcRXjKQYYD1U8C7aMLhZ+R0PfAr8Bn1TUPwnclnCdpgGjCQ1zd9aGu813C8KXI9fIPZO5zXdiibyq3mU3LEGTMZqVfHkVD6jq7lCFiPwMvAWcA76L9Le4/nPgTREJulRV3QU8k6jHGKnz5rXk52lVfUVE2ta5iJxzA8KdRcxlHu8wxmziimiR+ZSmYsnF/XUGqMmumu1Xs4Ab7MSsqt5cs08qx2ve0CtZxUMXw9zqc7EUbyOIyI/A64E3fIzlbgww7gSe6KJfR0TkAvBqohHLmW+0Bl8oHTigqg/X6aCqllEdUdV7qtq5V3vbd+tirJj2fBmcrSOkwCFVtU/KBpm56/vcyxxWVYsmo4jID8D7FU2amnMDlmpLX8Nm4cWEB3u8MJ59P6+qd1R1EJEvgQuR6iUKFzzju8TdYjH7y6r6rKruiTzgt5Z+NzfOQjsNJULP6GXXvLYzp6qzsdC5C1Z9YAuVr/s4E+7BQlgs9Xsh3MgZ8bi/fEM+FZG1lNJp9HDbfCQxGMvZ7Z8UrrrWJi3LPLGIZkcDxGIxCSpPzUmf9kHlkmtssc4APxlZ6LusdBbKpzdt3sJPRhrl8gGgETq1icUzJ/xwYVA47ZraCBrgWdYxT0I2m/N+ShPcMPv/HjHlDPUhX5GhPWYtMtQH3UWG9q8GZYb2zx4x+v53G+BfVUR4x6kzBSQAAAAASUVORK5CYII=" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://plus.google.com/" target="blank" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25"
+                viewbox="0 0 25 25">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.5;
+                    }
+                  </style>
+                </defs>
+                <image id="google-plus-social-logotype" class="cls-1" width="25" height="25"
+                  xlink:href="data:img/png;base64,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" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </main>
+
   <p>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
       <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
