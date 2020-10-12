@@ -65,14 +65,12 @@
           <li class="nav__item">
             <a href="" class="nav__link">Контакты</a>
           </li>
-          <li class="nav__item nav__item__find">
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
-              <input type="text" name="search" placeholder="Поиск" class="find nav__find">
-              <img src="/img/search.png" alt="Поиск" class="img__find ">
+          <li class="nav__item nav__item__search">
+            <form class="search" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+              <input type="text" name="search" placeholder="Поиск">
+              <button class="search-button"> </button>
+              <!-- <img src="/img/search.png" alt="Поиск" class="img__search "> -->
             </form>
-          </li>
-          <li>
-            
           </li>
         </ul>
       </nav>
@@ -99,11 +97,12 @@
                   <input type="number" name="guests" class="fildset__item" placeholder="Количество гостей" required>
                 </fieldset>
                 <div class="search-number">
-                  <button type="submit" class=" btn btn__search-number">
+                  <button type="submit" class=" btn btn__search-number btn-hover_white">
                     Найти номер
                   </button>
-                  <span class="free-numbers"> <span class="number-free">9756 </span> предложений доступно</span>
                 </div>
+                <span class="free-numbers"> <span class="number-free">9756 </span> предложений доступно</span>
+
               </form>
             </div>
           </div>
@@ -112,16 +111,16 @@
             <div class="special-offer__block">
               <div class="special-offer__box">
                 <span class="special-offer__text">Номера категории люкс</span>
-                <p class="special-offer__price"> от 5000 р <a href="#" class="special-offer__link">
+                <span class="special-offer__price"> от 5000 р <a href="#" class="special-offer__link">
                     <span class="special-offer__next">Подробнее
                       <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke="rgb(240, 191, 95)" stroke-width="2px" stroke-linecap="round"
+                        <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
                           stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                       </svg>
                     </span>
                   </a>
-                </p>
+                </span>
               </div>
             </div>
           </article>
@@ -152,71 +151,70 @@
           <ul class="service__list">
             <li class="service__list__item">
               <div class="service__item">
+                <img class="service__img" src="/img/service/exlusive.jpg" alt="">
                 <a href="#" class="a-color">
-                  <img class="service__img" src="/img/service/exlusive.jpg" alt="">
                   <h3 class="service__header-item">
                     Эксклюзивное обслуживание
                     <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       width="13px" height="20px">
-                      <path fill-rule="evenodd" stroke="rgb(240, 191, 95)" stroke-width="2px" stroke-linecap="round"
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
                         stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                     </svg>
                   </h3>
                 </a>
-                <p class="normal-font service__item__text">Далеко-далеко за словесными горами в стране гласных и
-                  согласных живут рыбные тексты.</p>
+                <span class="normal-font service__item__text">Равным образом постоянный количественный рост и сфера
+                  нашей активности</span>
               </div>
             </li>
             <li class="service__list__item">
               <div class="service__item">
+                <img class="service__img" src="/img/service/lease.jpg" alt="">
                 <a href="#" class="a-color">
-                  <img class="service__img" src="/img/service/lease.jpg" alt="">
                   <h3 class="service__header-item">
                     Аренда банкетных залов
                     <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       width="13px" height="20px">
-                      <path fill-rule="evenodd" stroke="rgb(240, 191, 95)" stroke-width="2px" stroke-linecap="round"
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
                         stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                     </svg>
                   </h3>
                 </a>
-                <p class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что дальнейшее
-                  развитие. Значимость этих проблем настолько очевидна, что дальнейшее
-                  развитие</p>
+                <span class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что дальнейшее
+                  различных форм.</span>
               </div>
             </li>
             <li class="service__list__item">
               <div class="service__item">
+                <img class="service__img" src="/img/service/pool.jpg" alt="">
                 <a href="#" class="a-color">
-                  <img class="service__img" src="/img/service/pool.jpg" alt="">
                   <h3 class="service__header-item">
                     Сауны, бассейны, фитнесс-залы
                     <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       width="13px" height="20px">
-                      <path fill-rule="evenodd" stroke="rgb(240, 191, 95)" stroke-width="2px" stroke-linecap="round"
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
                         stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                     </svg>
                   </h3>
                 </a>
-                <p class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что дальнейшее
-                  развитие </p>
+                <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
+                  работы поформированию позиции</span>
               </div>
             </li>
             <li class="service__list__item">
               <div class="service__item">
+                <img class="service__img" src="/img/service/car.jpg" alt="">
                 <a href="#" class="a-color">
-                  <img class="service__img" src="/img/service/car.jpg" alt="">
                   <h3 class="service__header-item">
                     Охраняемые автомобильные стоянки
                     <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                       width="13px" height="20px">
-                      <path fill-rule="evenodd" stroke="rgb(240, 191, 95)" stroke-width="2px" stroke-linecap="round"
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
                         stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                     </svg>
                   </h3>
                 </a>
-                <p class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что дальнейшее
-                  развитие </p>
+                <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
+                  работы поформированию позиции</span>
               </div>
             </li>
           </ul>
@@ -325,7 +323,7 @@
                 <p class=" normal-font placing__font">Lagoona Española</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -348,7 +346,7 @@
                 <p class=" normal-font placing__font">Lagoona son típicas</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -371,7 +369,7 @@
                 <p class=" normal-font placing__font">Lagoona de la guerra</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -394,7 +392,7 @@
                 <p class=" normal-font placing__font">Lagoona mentira piadosa</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -417,7 +415,7 @@
                 <p class=" normal-font placing__font">Lagoona empujar la creatividad</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -440,7 +438,7 @@
                 <p class=" normal-font placing__font">Lagoona el retorno</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -463,7 +461,7 @@
                 <p class=" normal-font placing__font">Lagoona enfermo terminó</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item">
@@ -486,16 +484,16 @@
                 <p class=" normal-font placing__font">Lagoona suerte siguió siempre</p>
                 <p class="normal-font">Барселона, Испания</p>
               </div>
-              <input type="button" class=" btn btn__placing" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
             </div>
           </li>
           <li class="placing__list-item placing__list-item-next">
             <a href="#" class="a-placing__color">
-              <img class="img-placing-next" src="/img/placing/9.jpg" alt="">
+              <!-- <img class="img-placing-next" src="/img/placing/9.jpg" alt=""> -->
               <span class="placing__box-next">Посмотреть все варианты
                 <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   width="13px" height="20px">
-                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="round"
+                  <path stroke-width="2px" stroke-linecap="round"
                     stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                 </svg>
               </span>
@@ -505,7 +503,7 @@
       </div>
     </section>
 
-<!-- Блок Контакты, Напишите нам -->
+    <!-- Блок Контакты, Напишите нам -->
     <section class="container contacts__write-us">
 
       <!-- Контакты -->
@@ -548,7 +546,7 @@
             </div>
           </div>
           <div class="route">
-            <button type="submit" class=" btn btn__route">
+            <button type="submit" class=" btn btn__route btn-hover_orange">
               Построить маршрут
             </button>
           </div>
@@ -566,9 +564,9 @@
               <input class="city write-us__item" type="text" id="name" maxlength="16" placeholder="Имя" required>
               <input class="write-us__item" type="tel" id="phone" minlength="11" maxlength="16" placeholder="+7"
                 pattern="[+]{1}[0-9]{11-16}" required>
-              <textarea class="write-us__item write-us__form__textarea" id="message"
-                placeholder="Сообщение..." required></textarea>
-              <button type="submit" class=" btn btn__send">
+              <textarea class="write-us__item write-us__form__textarea" id="message" placeholder="Сообщение..."
+                required></textarea>
+              <button type="submit" class=" btn btn__send btn-hover_white">
                 Отправить
               </button>
             </fieldset>
@@ -677,7 +675,7 @@
           </li>
         </ul>
       </div>
-            <img src="/img/footer/sun.png" class="footer__img" alt="">
+      <img src="/img/footer/sun.png" class="footer__img" alt="">
 
     </footer>
   </main>
