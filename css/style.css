@@ -663,7 +663,7 @@ a:hover {
   src: url("..//fonts/MullerLight.woff2") format("woff2"),
   url("..//fonts/MullerLight.woff") format("woff");
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 300;
 }
 @font-face {
   font-family: 'Muller';
