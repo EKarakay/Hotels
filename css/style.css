@@ -23,12 +23,12 @@ body {
   z-index: -1;
   background-color: #f1f1f1;
 }
-.container {
+/* .container {
   max-width: 1200px;
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 /* Шапка страницы */
 
@@ -134,9 +134,6 @@ body {
 .container__quick-booking {
   max-height: 596px;
 }
-.quick-booking {
-  display: flex;
-}
 .fieldset {
   min-height: 450px;
   padding: 0;
@@ -182,7 +179,7 @@ body {
 /* Спецпредложение */
 
 .special-offer__block {
-  width: 595px;
+  /* width: 595px; */
   height: 540px;
   display: flex;
   background-image: url(/img/special_offer.jpg);
@@ -244,14 +241,10 @@ body {
 
 /* Услуги */
 
-.service__list {
-  display: flex;
-  flex-wrap: wrap;
-}
 .service__list__item {
   margin-bottom: 24px;
-  margin-right: 24px;
-  flex: 0 0 calc(50% - 15px);
+}
+.service__item{
   background-color: rgb(255, 255, 255);
   border-radius: 12px 12px 12px 12px;
 }
@@ -282,27 +275,11 @@ body {
 
 /* Преимущества */
 
-.edge__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.edge__list-item {
-  flex: 0 0 calc(25% - 17px);
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-}
-.edge__list-item {
-  margin-bottom: 24px;
-  margin-right: 22px;
-}
-.edge__list-item:nth-child(4n) {
-  margin-right: 0;
-}
-.edge__list-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
-}
 .edge__item {
   padding: 45px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+
 }
 .edge__img {
   width: 70px;
@@ -320,27 +297,13 @@ body {
 
 /* Размещение */
 
-.placing__list {
-  display: flex;
-  flex-wrap: wrap;
-}
 .placing__list-item {
   min-height: 441px;
-  margin-bottom: 20px;
-  margin-right: 25px;
-  flex: 0 0 calc(33.33% - 17px);
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-}
-
-.placing__list-item:nth-child(3n) {
-  margin-right: 0;
-}
-.placing__list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 .placing__item {
   height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
 }
 .placing__price {
   margin-right: 40px;
@@ -410,11 +373,10 @@ body {
   border-radius: 12px;
 }
 .placing__list-item-next {
-  background-image: url(/img/placing/9.jpg);
-  background-size: cover;
-  position: relative;
   display: flex;
   align-items: flex-end;
+  background-image: url(/img/placing/9.jpg);
+  background-size: cover;
 }
 .placing__list-item-next a {
   display: inline-block;
@@ -433,7 +395,7 @@ body {
 /* Контакты */
 
 .contacts__write-us {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 20px;
 }
 .contacts__block {
