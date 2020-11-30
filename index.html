@@ -561,10 +561,10 @@
           <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
             class="write-us__form">
             <fieldset class="write-us__fieldset">
-              <input class="city write-us__item" type="text" name="name" maxlength="16" placeholder="Имя" required>
-              <input class="write-us__item" type="tel" name="phone" minlength="11" maxlength="16" placeholder="+7"
+              <input class="city write-us__item" type="text" id="name" maxlength="16" placeholder="Имя" required>
+              <input class="write-us__item" type="tel" id="phone" minlength="11" maxlength="16" placeholder="+7"
                 pattern="[+]{1}[0-9]{11-16}" required>
-              <textarea class="write-us__item write-us__form__textarea" name="message" placeholder="Сообщение..."
+              <textarea class="write-us__item write-us__form__textarea" id="message" placeholder="Сообщение..."
                 required></textarea>
               <button type="submit" class=" btn btn__send btn-hover_white">
                 Отправить
