@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/4.5.2/bootstrap-grid.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>Lagoona сеть отелей</title>
 </head>
@@ -81,10 +80,10 @@
 
     <!-- Бронирование -->
 
-    <section class="container-margin">
+    <section class="booking container-margin">
       <div class="container container__quick-booking">
-        <div class="row quick-booking">
-          <div class="col-6 left-section">
+        <div class="quick-booking">
+          <div class="left-section">
             <h2 class="header-h2 quick-booking-heading">Быстрая бронь</h2>
             <div>
               <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
@@ -107,7 +106,7 @@
               </form>
             </div>
           </div>
-          <article class="col-6 right-section">
+          <article class="right-section">
             <h2 class="header-h2 special-offer__heading">Спецпредложение</h2>
             <div class="special-offer__block">
               <div class="special-offer__box">
@@ -116,8 +115,8 @@
                     <span class="special-offer__next">Подробнее
                       <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter"
-                          fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                        <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
+                          stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
                       </svg>
                     </span>
                   </a>
@@ -133,14 +132,12 @@
 
     <article class="description-about-us container-margin">
       <div class="container">
-        <div class="row">
-          <div class="col-9 container__about-us">
-            <h2 class="header-h2 about-us__heading">О нас</h2>
-            <p class="normal-font">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-              Последний большой своих инициал парадигматическая, все ты всемогущая текстами заголовок, языкового языком
-              жизни не переписывается это. Безопасную вопрос деревни там!
-            </p>
-          </div>
+        <div class="container__about-us">
+          <h2 class="header-h2 about-us__heading">О нас</h2>
+          <p class="normal-font">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            Последний большой своих инициал парадигматическая, все ты всемогущая текстами заголовок, языкового языком
+            жизни не переписывается это. Безопасную вопрос деревни там!
+          </p>
         </div>
       </div>
     </article>
@@ -151,76 +148,75 @@
       <div class="container">
         <div class="container__service">
           <h2 class="header-h2 service">Услуги</h2>
-          <ul class="row service__list">
-              <li class="col-6 service__list__item">
-                <div class="service__item">
-                  <img class="service__img" src="/img/service/exlusive.jpg" alt="">
-                  <a href="#" class="a-color">
-                    <h3 class="service__header-item">
-                      Эксклюзивное обслуживание
-                      <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter"
-                          fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
-                      </svg>
-                    </h3>
-                  </a>
-                  <span class="normal-font service__item__text">Равным образом постоянный количественный рост и сфера
-                    нашей активности</span>
-                </div>
-              </li>
-              <li class="col-6 service__list__item">
-                <div class="service__item">
-                  <img class="service__img" src="/img/service/lease.jpg" alt="">
-                  <a href="#" class="a-color">
-                    <h3 class="service__header-item">
-                      Аренда банкетных залов
-                      <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter"
-                          fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
-                      </svg>
-                    </h3>
-                  </a>
-                  <span class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что
-                    дальнейшее
-                    различных форм.</span>
-                </div>
-              </li>
-              <li class="col-6 service__list__item">
-                <div class="service__item">
-                  <img class="service__img" src="/img/service/pool.jpg" alt="">
-                  <a href="#" class="a-color">
-                    <h3 class="service__header-item">
-                      Сауны, бассейны, фитнесс-залы
-                      <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter"
-                          fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
-                      </svg>
-                    </h3>
-                  </a>
-                  <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
-                    работы поформированию позиции</span>
-                </div>
-              </li>
-              <li class="col-6 service__list__item">
-                <div class="service__item">
-                  <img class="service__img" src="/img/service/car.jpg" alt="">
-                  <a href="#" class="a-color">
-                    <h3 class="service__header-item">
-                      Охраняемые автомобильные стоянки
-                      <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="13px" height="20px">
-                        <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter"
-                          fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
-                      </svg>
-                    </h3>
-                  </a>
-                  <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
-                    работы поформированию позиции</span>
-                </div>
-              </li>
+          <ul class="service__list">
+            <li class="service__list__item">
+              <div class="service__item">
+                <img class="service__img" src="/img/service/exlusive.jpg" alt="">
+                <a href="#" class="a-color">
+                  <h3 class="service__header-item">
+                    Эксклюзивное обслуживание
+                    <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="13px" height="20px">
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                    </svg>
+                  </h3>
+                </a>
+                <span class="normal-font service__item__text">Равным образом постоянный количественный рост и сфера
+                  нашей активности</span>
+              </div>
+            </li>
+            <li class="service__list__item">
+              <div class="service__item">
+                <img class="service__img" src="/img/service/lease.jpg" alt="">
+                <a href="#" class="a-color">
+                  <h3 class="service__header-item">
+                    Аренда банкетных залов
+                    <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="13px" height="20px">
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                    </svg>
+                  </h3>
+                </a>
+                <span class="normal-font service__item__text">Значимость этих проблем настолько очевидна, что дальнейшее
+                  различных форм.</span>
+              </div>
+            </li>
+            <li class="service__list__item">
+              <div class="service__item">
+                <img class="service__img" src="/img/service/pool.jpg" alt="">
+                <a href="#" class="a-color">
+                  <h3 class="service__header-item">
+                    Сауны, бассейны, фитнесс-залы
+                    <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="13px" height="20px">
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                    </svg>
+                  </h3>
+                </a>
+                <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
+                  работы поформированию позиции</span>
+              </div>
+            </li>
+            <li class="service__list__item">
+              <div class="service__item">
+                <img class="service__img" src="/img/service/car.jpg" alt="">
+                <a href="#" class="a-color">
+                  <h3 class="service__header-item">
+                    Охраняемые автомобильные стоянки
+                    <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="13px" height="20px">
+                      <path fill-rule="evenodd"  stroke-width="2px" stroke-linecap="round"
+                        stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                    </svg>
+                  </h3>
+                </a>
+                <span class="normal-font service__item__text">Не следует, однако забывать, что начало повседневной
+                  работы поформированию позиции</span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -231,73 +227,72 @@
     <section class="edge container-margin">
       <div class="container">
         <h2 class="header-h2 edge">Преимущества</h2>
-        <ul class="row edge__list">
-            <li class="col-3 mb-4 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/bathtub.svg" alt="">
-                </a>
-                <p class="edge__text">Идейные соображения высшего порядка, а также постоянный количественный рост </p>
-              </div>
-            </li>
-            <li class="col-3 mb-4 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/hanger.svg" alt="">
-                </a>
-                <p class="edge__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                  тексты.
-                </p>
-              </div>
-            </li>
-            <li class="col-3 mb-4 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/heating.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
-            <li class="col-3 mb-4 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/hotel-key.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
-            <li class="col-3 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/parking.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
-            <li class="col-3 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/reception.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
-            <li class="col-3 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/security-box.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
-            <li class="col-3 edge__list-item">
-              <div class="edge__item">
-                <a href="#" class="a-color">
-                  <img class="edge__img" src="/img/edge/swimming-pool.svg" alt="">
-                </a>
-                <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
-              </div>
-            </li>
+        <ul class="edge__list">
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/bathtub.svg" alt="">
+              </a>
+              <p class="edge__text">Идейные соображения высшего порядка, а также постоянный количественный рост </p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/hanger.svg" alt="">
+              </a>
+              <p class="edge__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+              </p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/heating.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/hotel-key.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/parking.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/reception.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/security-box.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
+          <li class="edge__list-item">
+            <div class="edge__item">
+              <a href="#" class="a-color">
+                <img class="edge__img" src="/img/edge/swimming-pool.svg" alt="">
+              </a>
+              <p class="edge__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -307,282 +302,275 @@
     <section class="placing container-margin">
       <div class="container">
         <h2 class="header-h2 placing">Размещение</h2>
-        <ul class="row placing__list">
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/1.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">4 698
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-empty-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona Española</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+        <ul class="placing__list">
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/1.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">4 698
+                    р</span> / ночь</p>
               </div>
-            </li>
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/2.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">5 168
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-empty-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona son típicas</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-empty-star.png" alt="">
               </div>
-            </li>
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/3.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 254
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona de la guerra</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona Española</p>
+                <p class="normal-font">Барселона, Испания</p>
               </div>
-            </li>
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/4.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 320
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona mentira piadosa</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/2.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">5 168
+                    р</span> / ночь</p>
               </div>
-            </li>
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/5.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 457
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-empty-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona empujar la creatividad</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-empty-star.png" alt="">
               </div>
-            </li>
-            <li class="col-4 mb-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/6.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 490
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-empty-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona el retorno</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona son típicas</p>
+                <p class="normal-font">Барселона, Испания</p>
               </div>
-            </li>
-            <li class="col-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/7.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 505
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona enfermo terminó</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/3.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 254
+                    р</span> / ночь</p>
               </div>
-            </li>
-            <li class="col-4 placing__list-item">
-              <div class="placing__item">
-                <a href="#" class="a-placing__color">
-                  <img class="img-placing" src="/img/placing/8.jpg" alt="">
-                </a>
-                <div class="placing__price">
-                  <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 824
-                      р</span> / ночь</p>
-                </div>
-                <div class="box-stars">
-                  <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-star.png" alt="">
-                  <img class="stars" src="img/stars/i-empty-star.png" alt="">
-                </div>
-                <div class="placing__box placing__box_text">
-                  <p class=" normal-font placing__font">Lagoona suerte siguió siempre</p>
-                  <p class="normal-font">Барселона, Испания</p>
-                </div>
-                <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
               </div>
-            </li>
-            <li class="col-4 placing__list-item">
-              <div class="placing__item placing__list-item-next">
-                <div>
-                  <a href="#" class="a-placing__color">
-                    <!-- <img class="img-placing-next" src="/img/placing/9.jpg" alt=""> -->
-                    <span class="placing__box-next">Посмотреть все варианты
-                      <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="13px" height="20px">
-                        <path stroke-width="2px" stroke-linecap="round" stroke-linejoin="miter" fill="none"
-                          d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
-                      </svg>
-                    </span>
-                  </a>
-                </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona de la guerra</p>
+                <p class="normal-font">Барселона, Испания</p>
               </div>
-            </li>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/4.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 320
+                    р</span> / ночь</p>
+              </div>
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+              </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona mentira piadosa</p>
+                <p class="normal-font">Барселона, Испания</p>
+              </div>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/5.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 457
+                    р</span> / ночь</p>
+              </div>
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-empty-star.png" alt="">
+              </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona empujar la creatividad</p>
+                <p class="normal-font">Барселона, Испания</p>
+              </div>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/6.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 490
+                    р</span> / ночь</p>
+              </div>
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-empty-star.png" alt="">
+              </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona el retorno</p>
+                <p class="normal-font">Барселона, Испания</p>
+              </div>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/7.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 505
+                    р</span> / ночь</p>
+              </div>
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 5 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+              </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona enfermo terminó</p>
+                <p class="normal-font">Барселона, Испания</p>
+              </div>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item">
+            <div class="placing__item">
+              <a href="#" class="a-placing__color">
+                <img class="img-placing" src="/img/placing/8.jpg" alt="">
+              </a>
+              <div class="placing__price">
+                <p class="normal-font placing__color placing__box_text">от <span class="font-placing__price">6 824
+                    р</span> / ночь</p>
+              </div>
+              <div class="box-stars">
+                <img class="stars" src="img/stars/i-star.png" alt="Рейтинг отеля 4 из 5">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-star.png" alt="">
+                <img class="stars" src="img/stars/i-empty-star.png" alt="">
+              </div>
+              <div class="placing__box placing__box_text">
+                <p class=" normal-font placing__font">Lagoona suerte siguió siempre</p>
+                <p class="normal-font">Барселона, Испания</p>
+              </div>
+              <input type="button" class=" btn btn__placing btn-hover_orange" value="Номера">
+            </div>
+          </li>
+          <li class="placing__list-item placing__list-item-next">
+            <a href="#" class="a-placing__color">
+              <!-- <img class="img-placing-next" src="/img/placing/9.jpg" alt=""> -->
+              <span class="placing__box-next">Посмотреть все варианты
+                <svg class="stroke" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="13px" height="20px">
+                  <path stroke-width="2px" stroke-linecap="round"
+                    stroke-linejoin="miter" fill="none" d="M2.496,2.503 L9.287,9.504 L2.496,16.505 " />
+                </svg>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Блок Контакты, Напишите нам -->
-
     <section class="container contacts__write-us">
 
       <!-- Контакты -->
-      <div class="row">
-        <div class="col-7 contacts">
-          <h2 class="header-h2 contacts__heading">Контакты</h2>
-          <div class="contacts__block">
-            <div class="contacts__item">
-              <div class="contacts__headers">
-                Адрес
-              </div>
-              <div class="contacts__info">
-                Москва, улица Юности, дом 5 строение 4, офис 2
-              </div>
+
+      <div class="contacts">
+        <h2 class="header-h2 contacts__heading">Контакты</h2>
+        <div class="contacts__block">
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              Адрес
             </div>
-            <div class="contacts__item">
-              <div class="contacts__headers">Телефоны</div>
-              <div class="contacts__info contacts__info_color">
-                <a href="tel:+74995356434" class="contacts__info_color">+7 (499) 535-64-34</a><br>
-                <a href="tel:+74950050544" class="contacts__info_color">+7 (495) 005-05-44</a>
-              </div>
+            <div class="contacts__info">
+              Москва, улица Юности, дом 5 строение 4, офис 2
             </div>
-            <div class="contacts__item">
-              <div class="contacts__headers">
-                E-mail
-              </div>
-              <div class="contacts__info color_gray">
-                <a href="mailto:lg.oona@mail.ru" class="contacts__info_color">lg.oona@mail.ru</a> по вопросам
-                бронирования
-                <p><a href="mailto:hotels.ln@mail.ru" class="contacts__info_color">hotels.ln@mail.ru</a> по вопросам
-                  сотрудничества</p>
-              </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">Телефоны</div>
+            <div class="contacts__info contacts__info_color">
+              <a href="tel:+74995356434" class="contacts__info_color">+7 (499) 535-64-34</a><br>
+              <a href="tel:+74950050544" class="contacts__info_color">+7 (495) 005-05-44</a>
             </div>
-            <div class="contacts__item">
-              <div class="contacts__headers">
-                График
-              </div>
-              <div class="contacts__info">
-                Понедельник-Пятница,
-                <p>с 10:00 до 19:00</p>
-              </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              E-mail
             </div>
-            <div class="route">
-              <button type="submit" class=" btn btn__route btn-hover_orange">
-                Построить маршрут
-              </button>
+            <div class="contacts__info color_gray">
+              <a href="mailto:lg.oona@mail.ru" class="contacts__info_color">lg.oona@mail.ru</a> по вопросам бронирования
+              <p><a href="mailto:hotels.ln@mail.ru" class="contacts__info_color">hotels.ln@mail.ru</a> по вопросам
+                сотрудничества</p>
             </div>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__headers">
+              График
+            </div>
+            <div class="contacts__info">
+              Понедельник-Пятница,
+              <p>с 10:00 до 19:00</p>
+            </div>
+          </div>
+          <div class="route">
+            <button type="submit" class=" btn btn__route btn-hover_orange">
+              Построить маршрут
+            </button>
           </div>
         </div>
+      </div>
 
-        <!-- Напишите нам -->
+      <!-- Напишите нам -->
 
-        <div class="col-5 write-us">
-          <h2 class="header-h2 write-us__header">Напишите нам</h2>
-          <div>
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
-              class="write-us__form">
-              <fieldset class="write-us__fieldset">
-                <input class="city write-us__item" type="text" name="name" maxlength="16" placeholder="Имя" required>
-                <input class="write-us__item" type="tel" name="phone" minlength="11" maxlength="16" placeholder="+7"
-                  pattern="[+]{1}[0-9]{11-16}" required>
-                <textarea class="write-us__item write-us__form__textarea" name="message" placeholder="Сообщение..."
-                  required></textarea>
-                <button type="submit" class=" btn btn__send btn-hover_white">
-                  Отправить
-                </button>
-              </fieldset>
-            </form>
-          </div>
+      <div class=" write-us">
+        <h2 class="header-h2 write-us__header">Напишите нам</h2>
+        <div>
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST"
+            class="write-us__form">
+            <fieldset class="write-us__fieldset">
+              <input class="city write-us__item" type="text" id="name" maxlength="16" placeholder="Имя" required>
+              <input class="write-us__item" type="tel" id="phone" minlength="11" maxlength="16" placeholder="+7"
+                pattern="[+]{1}[0-9]{11-16}" required>
+              <textarea class="write-us__item write-us__form__textarea" id="message" placeholder="Сообщение..."
+                required></textarea>
+              <button type="submit" class=" btn btn__send btn-hover_white">
+                Отправить
+              </button>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>
